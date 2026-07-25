@@ -85,7 +85,7 @@ class Stroke {
         'id': id,
         'points': points.map((p) => p.toJson()).toList(),
         'toolType': toolType.index,
-        'color': color.value,
+        'color': color.toARGB32(),
         'strokeWidth': strokeWidth,
         'isSynthetic': isSynthetic,
         'recognizedShape': recognizedShape?.index,

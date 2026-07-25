@@ -63,17 +63,17 @@ class PdfExporter {
   }
 
   static void _drawPageStrokes(PdfGraphics canvas, PdfPoint size, NotebookPage page) {
-    const scaleX = PdfPageFormat.a4.width / 1240.0;
-    const scaleY = PdfPageFormat.a4.height / 1754.0;
+    final scaleX = PdfPageFormat.a4.width / 1240.0;
+    final scaleY = PdfPageFormat.a4.height / 1754.0;
 
     for (final stroke in page.strokes) {
       if (stroke.points.isEmpty) continue;
 
       final pdfColor = PdfColor(
-        stroke.color.red / 255.0,
-        stroke.color.green / 255.0,
-        stroke.color.blue / 255.0,
-        stroke.toolType == ToolType.highlighter ? 0.35 : stroke.color.opacity,
+        stroke.color.r,
+        stroke.color.g,
+        stroke.color.b,
+        stroke.toolType == ToolType.highlighter ? 0.35 : stroke.color.a,
       );
 
       canvas.setStrokeColor(pdfColor);

@@ -13,7 +13,6 @@ class AppTheme {
         primary: AppColors.primary,
         secondary: AppColors.secondary,
         surface: AppColors.lightSurface,
-        background: AppColors.lightBackground,
         error: AppColors.accent,
       ),
       scaffoldBackgroundColor: AppColors.lightBackground,
@@ -27,10 +26,10 @@ class AppTheme {
         centerTitle: false,
         iconTheme: IconThemeData(color: Color(0xFF1E293B)),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: AppColors.lightSurface,
         elevation: 2,
-        shadowColor: Colors.black.withOpacity(0.06),
+        shadowColor: Colors.black.withValues(alpha: 0.06),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
           side: const BorderSide(color: AppColors.lightCardBorder, width: 1),
@@ -55,7 +54,6 @@ class AppTheme {
         primary: AppColors.primaryLight,
         secondary: AppColors.secondary,
         surface: AppColors.darkSurface,
-        background: AppColors.darkBackground,
         error: AppColors.accent,
       ),
       scaffoldBackgroundColor: AppColors.darkBackground,
@@ -69,10 +67,10 @@ class AppTheme {
         centerTitle: false,
         iconTheme: IconThemeData(color: Color(0xFFF1F5F9)),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: AppColors.darkSurface,
         elevation: 4,
-        shadowColor: Colors.black.withOpacity(0.4),
+        shadowColor: Colors.black.withValues(alpha: 0.4),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
           side: const BorderSide(color: AppColors.darkCardBorder, width: 1),

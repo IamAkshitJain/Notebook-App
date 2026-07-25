@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/theme/app_theme.dart';
+import 'data/datasources/local_storage_datasource.dart';
 import 'presentation/providers/theme_provider.dart';
 import 'presentation/providers/notebook_provider.dart';
 import 'presentation/views/notebook_editor_view.dart';
@@ -20,7 +21,7 @@ void main() async {
 }
 
 class PaperCraftApp extends ConsumerWidget {
-  const PaperCraftApp({Key? key}) : super(key: key);
+  const PaperCraftApp({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
