@@ -62,11 +62,3 @@ flutter:
   assets:
     - assets/textures/
     - assets/fonts/
-
-  fonts:
-    - family: Caveat
-      fonts:
-        - asset: assets/fonts/Caveat-Regular.ttf
-    - family: Inter
-      fonts:
-        - asset: assets/fonts/Inter-Regular.ttf
