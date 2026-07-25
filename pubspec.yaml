@@ -1,0 +1,72 @@
+name: paper_notebook
+description: "Modern production-ready digital notebook for Android, Windows, and Web using Flutter, Firebase, and Gemini API."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+  
+  # UI & Design
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.1.0
+  flutter_animate: ^4.5.0
+  glassmorphism: ^3.0.0
+  
+  # Storage & Offline Cache
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.2
+
+  # Networking & Cloud Sync
+  http: ^1.2.0
+  cloud_firestore: ^4.15.5
+  firebase_core: ^2.27.0
+  firebase_storage: ^11.6.6
+  firebase_auth: ^4.17.8
+  
+  # AI Integration
+  google_generative_ai: ^0.2.2
+
+  # Document & Export
+  pdf: ^3.10.8
+  printing: ^5.11.1
+  file_picker: ^8.0.0
+  image_picker: ^1.0.7
+  share_plus: ^8.0.2
+
+  # Utilities
+  uuid: ^4.3.3
+  intl: 0.20.2
+  vector_math: ^2.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/textures/
+    - assets/fonts/
+
+  fonts:
+    - family: Caveat
+      fonts:
+        - asset: assets/fonts/Caveat-Regular.ttf
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
